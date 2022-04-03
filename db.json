@@ -32,6 +32,32 @@
       "img": "http://localhost:5000/assets/images/offer-links/natural-fresh-fruits"
     }
   ],
+  "blogCategories": [
+    {
+      "id": 1,
+      "category": "Sale"
+    },
+    {
+      "id": 2,
+      "category": "Special"
+    },
+    {
+      "id": 3,
+      "category": "Free"
+    },
+    {
+      "id": 4,
+      "category": "Holidays"
+    },
+    {
+      "id": 5,
+      "category": "Recipes"
+    },
+    {
+      "id": 6,
+      "category": "Other"
+    }
+  ],
   "posts": [
     {
       "id": 1,

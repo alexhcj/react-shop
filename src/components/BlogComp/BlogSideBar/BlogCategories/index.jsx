@@ -4,9 +4,8 @@ import { blogCategoriesAPI } from '../../../../api'
 import { FullsizeDivider } from '../../../UI'
 import s from './BlogCategories.module.css'
 
-export const BlogCategories = ({categoryHandler}) => {
+export const BlogCategories = ({categoryHandler, categoryChoose}) => {
     const [categories, setCategories] = useState([])
-    const [active, setActive] = useState('')
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,7 +23,6 @@ export const BlogCategories = ({categoryHandler}) => {
 
     const categoryChangeHandler = (val) => {
         categoryHandler(val)
-        setActive(val)
     }
 
     return (
@@ -34,7 +32,7 @@ export const BlogCategories = ({categoryHandler}) => {
             <ul>
                 {categories.map(category=>{
                     let itemClassName
-                    active===category.category ? itemClassName = s.chosen : itemClassName = s.category
+                    categoryChoose===category.category ? itemClassName = s.chosen : itemClassName = s.category
                     return (
                         <li id={category.category} 
                             className={itemClassName}

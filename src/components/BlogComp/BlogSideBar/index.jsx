@@ -78,7 +78,7 @@ export const BlogSideBar = ({setPosts, setLoadMore, setLoad, setLoading, posts, 
                 <BlogSearch searchHanlder={searchHanlder} />
                 <RecentComments />
                 <RecentPosts />
-                <BlogCategories categoryHandler={categoryHandler} />
+                <BlogCategories categoryChoose={category} categoryHandler={categoryHandler} />
             </div>
         </div>
     )
